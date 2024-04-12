@@ -1,0 +1,19 @@
+import wollok.game.*
+import autos.*
+
+program abc {
+game.title("Autitos")
+game.width(12)
+game.height(10)
+game.boardGround("empedrado.jpg")
+game.addVisual(auto)
+
+
+keyboard.right().onPressDo{auto.moverseALaDerecha()}
+keyboard.left().onPressDo{auto.moverseALaIzquierda()}
+keyboard.down().onPressDo{auto.moveteAbajo()}
+keyboard.up().onPressDo{auto.moveteArriba()}
+
+
+game.start()
+}
